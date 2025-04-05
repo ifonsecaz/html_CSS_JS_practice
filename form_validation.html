@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="text/javascript" src="/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=z0r_GaSLUhu76FT7R_H9s1pQY0qhNS9HREXyRL-ck6WJXlAFM6MZeeU4VARXYXF7z-PUzB5zrpaItjnBl8O_GnbrXp-o7CNMHnj0cER2HC8sBzSR2NQBP_-RnDIf7ePRYJ6tJSOycYULdBrn7ho7SgS-GSPhg6sCzT3ma5hkKNbVI2Qj9Xdyp3T8HKSYyqoRe_TYZ4r3UxNTy7KOcBdWRLBQkdjvqiUCMo2ADuyMbPI" charset="UTF-8"></script><script type="application/javascript">
+            function checkdata()
+            {
+                var username = document.getElementById("name");
+                var emailid = document.getElementById("email");
+                if(username.value==""){
+                    alert("Please enter the name");
+                    username.focus();
+                    return false;
+                }
+
+                 //Check if email field is empty
+                if(email_address.value == ""){
+                        alert("Please enter the email");
+                        email_address.focus();
+                        return false;
+                }
+                //If all is well return true.
+                return true;
+            }
+        </script>
+        <title>Contact Details</title>
+    </head>
+    <body>
+        <h2>Enter your contact details:</h2> <br>
+        <form id="form1" onsubmit="return checkdata()">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email">
+            <br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
